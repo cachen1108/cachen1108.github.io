@@ -2,33 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--link 連結檔案 -->
-    <link href="sec.css" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="start/css/style.css" rel="stylesheet">
+        <!--中文字體-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+        <!--英文字體-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Noto+Sans:ital,wght@1,100&display=swap" rel="stylesheet">
+    <title>LOVE TAIWAN ~ 就是愛逮玩!!</title>
 </head>
-<header>
-    <h1>< header ><p>可放置頁面主要標題、LOGO等</p></header></h1>
-</header>
+
 <body>
-    
-    <!--以下是語意標籤nav導覽用-->
-    <nav >
-        < nav ><p>此網頁的導覽區塊</p></nav>
-        <ul>
-        </ul>
-    </nav>
-   <!--這裡是article裡面放section標籤-->
-   <article>
-    < article ><p>內容區</p>
-    <section>< section ><p>網頁內容的區塊</p> </section>
-   </article>
-      <!--這裡是aside側邊欄標籤-->
-   <aside>
-    < aisde ><p>側邊欄位可放置額外資訊、相關連結等</p></aisde>
-   </aside>
-   <!--footer-->
-   <footer>
-    < footer ><P>頁角處，可在此聲明版權、使用規範等等</P>
-   </footer>
+  <header><!--新增header-->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-light"><!--刪除navbar-light-->
+        <div class="container-fluid"><!--新增容器-->
+          <a class="navbar-brand" href="#">
+            <img src="start/picture/logo1.jpg"><!--新增圖檔-->
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">首頁<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">最新消息</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  相關行程
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> <!--div修正為ul-->
+                  <li><a class="dropdown-item" href="#">北部</a></li> <!--新增li-->
+                  <li><a class="dropdown-item" href="#">中部</a></li>
+                  <li><hr class="dropdown-divider"></li> <!--div修正為hr-->
+                  <li><a class="dropdown-item" href="#">南部</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">聯絡我們</a><!-- 刪除href="#" tabindex="-1" aria-disabled="true"-->
+              </li>
+            </ul>
+            <form class="d-flex" role="search"> <!--修改class新增role-->
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div> 
+      </nav>        
+    </div> 
+  </header>    
+    <section id="intro">
+        <!--container-自適應網頁 bg-light背景顏色-->
+        <div class="container-fluid bg-light p-5"> 
+            <div class="container">
+                <div class='col-md-12'>
+                    <h1 class="display-4">熊呵勝ㄟ所在</h1>
+                    <p class="lead">作伙來七逃!</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">衝去玩</a>
+                </div>
+            </div>
+        </div> 
+    </section>
+   <!--簡介的區塊-->
+    <section id="second">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2 text-center">
+            <div class="row">
+              <div class="col-md-4">
+                123
+              </div>
+              <div class="col-md-8">
+                123
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 </body>
 </html>
